@@ -50,10 +50,7 @@ for(const c of cookies2)
   {
     console.log("Cookies1 is :",c);
     console.log("Cookies2 is :",c);
-    console.log("Cookies3 is :",c);
-    console.log("Cookies4 is :",c);
-    console.log("Cookies5 is :",c);
-    console.log("Cookies6 is :",c);
+    
 
   } 
 })
