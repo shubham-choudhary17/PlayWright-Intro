@@ -48,6 +48,9 @@ await p1.pause();
     }
 for(const c of cookies2)
   {
-    console.log("Cookies is :",c);
+    console.log("Cookies1 is :",c);
+    console.log("Cookies2 is :",c);
+    console.log("Cookies3 is :",c);
+
   } 
 })
