@@ -5,7 +5,7 @@ test.skip("Test case 1",async ({page,browser})=>{
  // let b1 = browser.contexts();
    console.log(browser.version());
 })
-test("TestCase2 Browser contex",async({browser,context})=>{
+test.skip("TestCase2 Browser contex",async({browser,context})=>{
   // let p1 = await browser.newContext(); new chrome session
    let p1 = await context.newPage();
   await p1.goto("https://www.google.com/");

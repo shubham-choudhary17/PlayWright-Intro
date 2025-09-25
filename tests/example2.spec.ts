@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Tc1',async ({page})=>{
+test.skip('Tc1',async ({page})=>{
   await page.goto('https://www.npmjs.com/package/playwright');
   let context = page.context();
  let p1 = await context.newPage();

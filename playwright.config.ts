@@ -43,7 +43,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-      testMatch:['tests/testCase1.spec.ts'],
+      testMatch:['tests/day11.spec.ts'],
     },
     
 /*
