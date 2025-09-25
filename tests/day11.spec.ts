@@ -20,6 +20,7 @@ test('tc2', async ({ page }) => {
  await page.getByPlaceholder('Full Name').fill('Shubham choudhary');
  await page.locator('#userEmail').fill('shubham@gmail.com');
  await page.locator('#currentAddress').fill('Noida');
- await page.locator('#permanentAddress').fill('Moradabad India');
+ await page.locator('#permanentAddress').fill('India');
  await page.getByText('Submit').click();
+
 });
