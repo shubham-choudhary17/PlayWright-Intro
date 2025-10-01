@@ -15,6 +15,8 @@ export default defineConfig({
   testDir: './tests',
   /* testMatch : './tests/example*.ts'  THIS will RUN ONLY NAME MATCH WITH THE FILE EXAMPLE */
   /* testIgnore : './tests/exapmle1.ts' THIS WILL IGNORE THE EXAMPLE1 FILE */
+globalTimeout: 3600000,
+timeout: 120000,
 
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -38,7 +40,10 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     headless: false,
-    viewport: null,
+    viewport: { width: 1366, height: 768 },
+    
+    
+    
   },
 
   /* Configure projects for major browsers */
@@ -46,7 +51,9 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-      testMatch:['tests/day11.spec.ts'],
+   
+      testMatch:['tests/day13.spec.ts'],
+      
     },
     
 /*
